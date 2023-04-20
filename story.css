@@ -1,0 +1,80 @@
+*{
+    margin : 0;
+    padding :0;
+    font-family : sans-serif;
+}
+.banner {
+     width: 1700px;
+     height: 900px;
+     background-image:  url('sto.jpg');
+     background-size : cover;
+     background-position: center;
+    }
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%) ;
+    text-align: center;
+    color:#fff ;
+}
+.content h1{
+    font-size: 90px;
+    margin: 90px 70px 0 70px ;
+    text-align: center;
+    text-shadow: 2px 2px royalblue;
+    }
+.content h2 {
+        font-weight:100 ;
+        margin: 20px 430px -150px 70px ;
+        line-height: 42px;
+        text-align: left;
+        font-size: 31px;
+        text-shadow: 1.5px 1.5px rgb(30, 32, 32);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+    }
+.content img{
+ float:right  ;
+ margin: -50px 20px 0 0;
+ border-style: solid;
+ border-color: #fff;
+ border-width: 7px;
+    }
+.content h2{
+        float:left  ;
+            }
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 250px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border : none;
+}
+
+
+            

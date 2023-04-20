@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <link rel="stylesheet"href="menu.css">
+    </head>
+    <body>
+   
+      <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+      <script type="module">
+                      // Import the functions you need from the SDKs you need
+                      // TODO: Add SDKs for Firebase products that you want to use
+                      // https://firebase.google.com/docs/web/setup#available-libraries
+                    
+                      // Your web app's Firebase configuration
+                      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+                      const firebaseConfig = {
+                        apiKey: "AIzaSyDo58VTn1985ONUEpPJkwusvlGE9jQQl90",
+                        authDomain: "mak-coffee-2f3e9.firebaseapp.com",
+                        projectId: "mak-coffee-2f3e9",
+                        storageBucket: "mak-coffee-2f3e9.appspot.com",
+                        messagingSenderId: "1049265232638",
+                        appId: "1:1049265232638:web:443903770e42d61dfa23af",
+                        measurementId: "G-C5CM5JQQ2P"
+                      };
+                    
+                      // Initialize Firebase
+                      firebase.initializeApp(firebaseConfig);
+                      firebase.analytics();
+                      
+                      var item1 =document.getElementById('item1');
+                      var dbRef = firebase.database().ref().child('item1');
+                      dbRef.on('value', snap => item1.innerText = snap.val());
+
+
+                      var item2 =document.getElementById('item2');
+                      var dbRef2 = firebase.database().ref().child('item2');
+                      dbRef2.on('value', snap => item2.innerText = snap.val());
+
+
+                      var item3 =document.getElementById('item3');
+                      var dbRef3 = firebase.database().ref().child('item3');
+                      dbRef3.on('value', snap => item3.innerText = snap.val());
+
+
+                      var item4 =document.getElementById('item4');
+                      var dbRef4 = firebase.database().ref().child('item4');
+                      dbRef4.on('value', snap => item4.innerText = snap.val());
+
+
+                      var item5 =document.getElementById('item5');
+                      var dbRef5 = firebase.database().ref().child('item5');
+                      dbRef5.on('value', snap => item5.innerText = snap.val());
+
+
+                      var item6 =document.getElementById('item6');
+                      var dbRef6 = firebase.database().ref().child('item6');
+                      dbRef6.on('value', snap => item6.innerText = snap.val());
+
+        
+                      var item7 =document.getElementById('item7');
+                      var dbRef7 = firebase.database().ref().child('item7');
+                      dbRef7.on('value', snap => item7.innerText = snap.val());
+
+
+                      var item8 =document.getElementById('item8');
+                      var dbRef8 = firebase.database().ref().child('item8');
+                      dbRef8.on('value', snap => item8.innerText = snap.val());
+
+
+                      var item9 =document.getElementById('item9');
+                      var dbRef9 = firebase.database().ref().child('item9');
+                      dbRef9.on('value', snap => item9.innerText = snap.val());
+                      
+
+
+
+                      var m1 =document.getElementById('m1');
+                      var dbRef10 = firebase.database().ref().child('m1');
+                      dbRef10.on('value', snap => m1.innerText = snap.val());
+
+                      var m2 =document.getElementById('m2');
+                      var dbRef20 = firebase.database().ref().child('m2');
+                      dbRef20.on('value', snap => m2.innerText = snap.val());
+
+                      var m3 =document.getElementById('m3');
+                      var dbRef30 = firebase.database().ref().child('m3');
+                      dbRef30.on('value', snap => m3.innerText = snap.val());
+
+                      var m4 =document.getElementById('m4');
+                      var dbRef40 = firebase.database().ref().child('m4');
+                      dbRef40.on('value', snap => m4.innerText = snap.val());
+
+                      var m5 =document.getElementById('m5');
+                      var dbRef50 = firebase.database().ref().child('m5');
+                      dbRef50.on('value', snap => m5.innerText = snap.val());
+
+                      var m6 =document.getElementById('m6');
+                      var dbRef60 = firebase.database().ref().child('m6');
+                      dbRef60.on('value', snap => m6.innerText = snap.val());
+        
+                      var m7 =document.getElementById('m7');
+                      var dbRef70 = firebase.database().ref().child('m7');
+                      dbRef70.on('value', snap => m7.innerText = snap.val());
+
+                      var m8 =document.getElementById('m8');
+                      var dbRef80 = firebase.database().ref().child('m8');
+                      dbRef80.on('value', snap => m8.innerText = snap.val());
+
+                      var m9 =document.getElementById('m9');
+                      var dbRef90 = firebase.database().ref().child('m9');
+                      dbRef90.on('value', snap => m9.innerText = snap.val());
+                     
+      </script>
+      <div class="banner">
+        <div class="row">
+         <div class="col">
+         <h1>BEST ONES 
+            
+         </h1>
+         <p>What do you want most from coffee? <br>That’s what you get most from MAK.</p>
+         <button type="button"onclick="location.href='index.html'"><span></span>Home</button>
+         </div>   
+         <div class="col">
+           <div class="card card1"><h5 id="m1"></h5><h3 id="item1"></h3></div>
+           <div class="card card2"><h5 id="m2"></h5><h3 id="item2"></h3></div>
+           <div class="card card3"><h5 id="m3"></h5><h3 id="item3"></h3></div>
+           <div class="card card4"><h5 id="m4"></h5><h3 id="item4"></h3></div>
+           <div class="card card5"><h5 id="m5"></h5><h3 id="item5">/h3></div>
+           <div class="card card6"><h5 id="m6"></h5><h3 id="item6"></h3></div>
+           <div class="card card7"><h5 id="m7"></h5><h3 id="item7"></h3></div>
+           <div class="card card8"><h5 id="m8"></h5><h3 id="item8"></h3></div>
+           <div class="card card9"><h5 id="m9"></h5><h3 id="item9"></h3></div>
+         </div>   
+        </div>
+      </div>  
+
+    </body>
+</html>
